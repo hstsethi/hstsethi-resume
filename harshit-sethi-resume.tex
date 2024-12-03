@@ -1,0 +1,231 @@
+\documentclass[a4paper]{article} 
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+% \fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{-4pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.4in}
+% \addtolength{\bottomargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-2pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Harshit Sethi } \\ \vspace{1pt}
+    \href{mailto:hstsethi@outlook.com}{\underline{hstsethi@outlook.com}} $|$ 
+    \href{https://linkedin.com/in/hstsethi}{\underline{linkedin.com/in/hstsethi}} $|$ \href{https://hstsethi.vercel.app}{\underline{hstsethi.vercel.app}}
+    $|$    \href{https://github.com/hstsethi}{\underline{github.com/hstsethi}} $|$ \href{https://kaggle.com/hstsethi}{\underline{kaggle.com/hstsethi}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vivekananda Global University}{Jaipur, Rajasthan, India}
+      {Bachelor of Computer Applications in Artificial Intelligence}{2024-07-XX - 2028-05-XX}
+    \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+            \textbf{Languages}{: C++, Python, Bash}\\
+    % \textbf{Frameworks}{: Express.js, } \\
+         \textbf{Developer Tools}{: Git, NVim, Jupyter} \\ 
+         \textbf{Skills}{: SEO, Equity Trading(25\%+ profit, \href{https://hstsethi.vercel.app/posts/finance/from-coins-to-25-equity-at-18}{memoir}), Linux Command Line, Regular Expressions} \\ 
+         % \textbf{Coursework}{: Calculus, Linear Algebra, Python, Mhchine Learning, Deep Learning, Reinforcement Learning, Natural Language Processing  } \\ 
+     \textbf{Libraries}{: Pandas, Numpy, Matplotlib, Scikit-learn}
+    }}
+ \end{itemize}
+    \section{Experience} 
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Models Limited Public Beta Tester}{2024-09-XX - 2024-10-XX}
+      {Github}{\href{https://github.com/marketplace/models}}
+      \resumeItemListStart
+      \resumeItem{Reported a \href{https://github.com/orgs/community/discussions/138866}{bug} about different models being served through API as compared to of Playground. Collected output of various models including Mistral-large, gpt4-0, Phi-3.5-instruct-mini by using Azure Inference SDK through Python to bulk prompt models and compared their output to output of playground.}
+     \resumeItem{Improved multilingual model search process by identifying and reporting lack of multilingual tags in Mistral 2407. Supported claim with official model card, MMLU benchmarks, and personal testing in Hindi, Punjabi(Shahmukhi, Gurumukhi) with literary works.}
+\resumeItemListEnd
+\resumeSubheading
+{Open Source Contributor}{2024-09-XX - Present}{Open Source Community}{\href{https://github.com/hstsethi}}
+\resumeItemListStart 
+\resumeItem{\textbf{Hacktoberfest 2024: }Completed challenge with 6 merged pull requests, including \textbf{4 in top 5 highest stared projects}. {\href{https://hstsethi.vercel.app/posts/programming/completed-hacktoberfest-2024-loved-hated}{Writeup}}}
+\resumeItem{\textbf{Telegram Leecher: }Improved download speed of aria2c by \textbf{15\%} by various hacks, sourced from \href{https://github.com/hstsethi/no-frills-dotfiles}{personal dotfiles repository}, including decreasing split size, increasing maximum connection per server limit.}
+
+\resumeItemListEnd
+   \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://github.com/hstsethi/dietcli}{\textbf{DietCli}} $|$ \emph{C++, Cmake, RapidJSON, Python, Pandas, Matplotlib}}{2023-03-XX } 
+          \resumeItemListStart
+            \resumeItem{Developed a cross-platform, command-line nutrition tracker with C++ using RapidJSON as a JSON parser, std::ostringstream for buffers, Cmake as build system, USDA RDI as a data source.}
+            % \resumeItem{Automated extraction of RDI amounts from PDF document provided by United States Department of Agriculture using Python and Regular expressions.}
+\resumeItem{Increased Input/Output speed by \textbf{35\% } by utilizing const references, RapidJSON and buffering via std::ostringstream. Instead of unbuffered std::cout and INIParser used in \href{https://github.com/hstsethi/nutritioncli}{NutritionCLI}.}
+\resumeItem{Created a Python program with Pandas, Matplotlib to calculate and generate data visualizations.}
+          \resumeItemListEnd
+
+\resumeProjectHeading
+{\href{https://github.com/hstsethi/awesome-j2me}{\textbf{Awesome J2ME}} $|$ \emph{Java, J2ME}}{2023-07-XX }
+   \resumeItemListStart
+
+ \resumeItem{Created a curated list of \textbf{25+ items}, related to J2ME, including tutorials, scientific papers, tools, applications, communities that passed \textbf{all 33 automated tests} in first pull request, received 2 approvals within 48 hours, gained  \textbf{45+ stars}, and got featured in projects including Awesome-all, J2ME Fandom, \href{https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/game-tools}{Free Media Heck Yeah's Wiki(360,00+ readers)}.}
+
+
+
+ \resumeItem{Employed advanced techniques like web scrapping, automated tests, reverse engineering, emulating hardware, manual verification, Awesome Lint and community feedback to ensure accuracy and relevance.}
+
+ \resumeItem{Reviewed \textbf{3 other pull requests} and suggested changes.}
+
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\href{https://hstsethi.vercel.app}{\textbf{Personal Website}} $|$ \emph{HTML, CSS}}{2024-02-XX }
+    
+\resumeItemListStart
+\resumeItem{Authored \textbf{7+ unique articles} on various  topics including career, finance, lifestyle, autobiography, programming employing empirical evidence, charts and persuasive writing.}
+% \resumeItem{Developed an AI model to...}
+\resumeItem{Improved SERP ranking across all major search engines including Google, Bing, Yandex, Duck Duck Go, Brave Search, by keyword research, meta tags, schema data, collaborating with webmasters of minimalist web directories, promoting it on social media platforms, own groups.}
+
+\resumeItemListEnd
+
+    \resumeProjectHeading
+        {\href{https://github.com/hstsethi/peartok-go}{\textbf{PearTok} $|$ \emph Go, Gin, HTML, CSS, Javascript, Regular Expressions}}{2024-04-XX }
+        \resumeItemListStart
+    \resumeItem{Developed a decentralized, peer-to peer token transfer full stack web app. Utilised Go, Gin for the backend. JavaScript, HTML, CSS for the frontend.}
+
+    \resumeItem{Achieved a \textbf{15\% }increase in transfer speed by eliminating the need for a central server and utilizing direct TCP connections.} 
+    % \resumeItem{Developed mobile-first, SEO friendly frontend using HTML, CSS, JavaScript that scored on Google PageSpeed Insights, on Lighthouse accessibility test.}
+    
+\resumeItem{Improved client side performance by \textbf{5\%} by using various methods including deferring script download, minifying assets, pattern attribute for script-less client side input verification.}
+
+\resumeItemListEnd 
+ %
+ % \resumeProjectHeading
+ %      {\href{https://github.com/hstsethi/pytenpass/}{\textbf{PytenPass} $|$ \emph{Python, Pypass, Pyperclip, argparse }}}{2022-06-XX}
+ %           \resumeItemListStart
+ %             \resumeItem{Developed a non-interactive, command line, cross-platform Keepass client using PyKeeyPass, argparse and PyperClip.}
+ %             \resumeItem{Reduced user-interaction time by \textbf{5 seconds} by implementing Git patching mechanism to incorporate additional functionalities such as copying passwords to clipboard and hardcoding password.}
+ %                 \resumeItemListEnd
+\resumeProjectHeading
+{\href{https://github.com/hstsethi/in-mob-prefix}{\textbf{in-mob-prefix}} $|$ \emph{Python, Jupyter, Pandas, Matplotlib, Bash, Scikit-learn, Numpy, Joblib, Argparse}}{2024-09-XX}
+\resumeItemListStart
+    \resumeItem{Created 4 CSV dataset, charts, machine learning based Python program about mobile number prefixes in India, that got featured in Awesome OSINT(20,000+ stars). Utilized Jupyter, Matplotlib for visualizations. Scikit-learn, Pandas, Numpy for machine learning.}
+
+    \resumeItem{Preprocessed raw data using various techniques including Pandas, Microsoft Excel, SQL, Regular Expressions.}
+    \resumeItem{Collected and validated data through various sources including Wikipedia API, PDFs provided by Telecom Registry of India(TRAI), web scrapping, Truecaller and personal research.}
+    \resumeItem{Achieved \textbf{15\%} increase in accuracy by using a combination of dataset lookup, and training 4 specialized gradient boosting classifiers models on 4 different set of prefixes.}
+    \resumeItem{Achieved \textbf{20\%} increase in performance speed by chaining Pandas queries, efficient use of Numpy array, creating and loading models from disk using Joblib.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+    %-----------PROGRAMMING SKILLS-----------
+
+% %-------------------------------------------
+%  \section{Languages}
+%  % I will remove this section when i get some more stuff to add.
+%   \begin{itemize}[leftmargin=0.15in, label={}]
+%       \small{\item{English}} \\
+%       \small{\item{Hindi}} \\
+%       \small{\item{Punjabi}}          
+%   \end{itemize}
+
+% \section{Achievements}
+  % \begin{itemize}
+     % \small{\item{{25\%+ profit in equity trading account}} \\
+      % \item{{30+ stars on Github}} \\
+      % \item{\textbf{865 out of 8,000 rank} in IPU CET 2024, which consisted of CBSE Class 12 core mathematics, English, computer knowledge, science.}}
+      % \end{itemize}
+% Lack of content is responsible for spacing at the end.
+%  \vspace{-30in}
+\end{document}
